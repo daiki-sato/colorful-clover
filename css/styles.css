@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.4
+2009-07-27
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,ul,li,a,p,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, article,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, article {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+input, select {
+    vertical-align:middle;
+}
+/* End Reset CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ここからcss */
+  img{
+    width: 100%;
+  }
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+.container-box{
+  
+}
+.inner{
+  
+}
+.pic img{
+  width: 100%;
+}
+
+/* ここからheader */
+.navbar-toggler {
+  border: none;
+}
+header{
+  height: 60px;
+}
+header img{
+  width: 200px;
+  padding-top: 5px;
+}
+
+
+/* ここからinfo */
+.info{
+  
+}
+.info h2,.content h2{
+  color: white;
+  background-color: #B99565;
+  font-size: 16px;
+  padding: 10px 15px;
+  font-weight: normal;
+}
+.info li{
+  height: 55px;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+.info li:nth-child(even){
+  background-color: #F5F3EF;
+}
+.info ul li p::before{
+  content: "▶︎";
+}
+.info ul li p{
+  margin-top: 5px;
+  font-size: 14px;
+}
+/* ここまでinfo*/
+
+
+
+/* ここからcontent*/
+.content-item{
+  padding: 0 10px;
+}
+.content-item img{
+  margin-top: 12px;
+}
+.text{
+  border-left: 4px solid black;
+  padding: 5px 0 5px 10px;
+  height: 55px;
+  margin-top: 15px;
+}
+.text h3{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.place{
+  display: flex;
+  margin-bottom: 17px;
+}
+.place p{
+  background-color: #B99565;
+  color: white;
+  margin-right: 12px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+.food-name{
+  margin-top: 15px;
+  margin-bottom: 33px;
+  font-size: 15px;
+}
+.food-name::before{
+  content: "-   ";
+  padding: 0 10px;
+}
+
+
+/* ここからfooter */
+footer ul{
+  background: #53514C;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer li{
+  margin:  0 auto;
+  width: 280px;
+  text-align: center;
+  border: 1px solid white;
+  list-style: none;
+  margin-bottom: 10px;
+}
+footer ul li a{
+  text-align: center;
+  color: white;
+  padding: 7px 107px;
+  display: block;
+}
+
+/* ここからheader-logo */
+.header-logo{
+  margin-top: 13px;
+  box-sizing: border-box;
+}
+.header-logo img{
+  width: 165px;
+  margin: 0 auto;
+  display: block;
+}
+.header-logo p{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+/* ここから@media min-width:767px  画面サイズが767px以上に適用*/  
+@media (min-width:767px){
+  /* ここからheader */
+  header img{
+    width: 250px;
+  }
+  header ul li a{
+    color: #9c9b98;
+    margin: 0 3px;
+  }
+  header ul li a:hover{
+    background-color: #B99565;
+    color: white;
+    transition-duration: 0.3s;
+  }
+  /* ここから.info */
+  .info{
+    margin-top: 30px;
+  }
+  .info ul li{
+    display: flex;
+    height: 34px;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .info h2 , .content h2{
+    font-size:18px;
+  }
+  .info ul li time{
+    font-size: 14px;
+    padding-right: 17px;
+  }
+  .info ul li p{
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  /* ここからcontent */
+  .content{
+    margin-top: 50px;
+  }
+  .content-items{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content-item{
+    width: 50%;
+  }
+  .text h3{
+    font-size: 19px;
+  }
+  .text .place p{
+    font-size: 12px;
+  }
+  .food-name {
+    font-size: 17px;
+  }
+
+  /* ここからfooter */
+  footer ul{
+    flex-direction: row;
+    height: 72px;
+    margin-top: 70px;
+  }
+  footer ul li{
+    margin:  0 11px;
+    width: 122px;
+  }
+  footer ul li a{
+    padding: 8px 30px; 
+  }
+  footer ul li a:hover{
+    color: #53514C;
+    background: white;
+    text-decoration: none;
+    transition-duration: 0.3s;
+  }
+  .header-logo{
+    margin-top: 20px;
+  }
+  .header-logo img{
+    width: 206px;
+  }
+  .header-logo p{
+    font-size: 12px;
+  }
+}
+
+
+
+/* ここから@media min-width:1000px  画面サイズが1000px以上に適用*/  
+@media (min-width:1000px){
+  .inner{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .pic img{
+    max-width: 1500px;;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+}
